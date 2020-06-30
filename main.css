@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-text: #5a5a5a;
+    --clr-primary: #067E0A;
+    --clr-accent: #764981;
+
+    --ff-logo: "Piedra", sans-serif;
+    --ff-section-title: "Pangolin", sans-serif;
+}
+
+html {
+    color: var(--clr-text);
+    font-family: "Dancing Script", serif;
+}
+
+.logo {
+    font-family: var(--ff-logo);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 3rem;
+    background-color: var(--clr-primary);
+    color: white;
+}
+
+h2 {
+    font-family: var(--ff-section-title);
+    margin: 1rem .3rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: .5rem;
+    color: var(--clr-text);
+}
+
+.menu a:hover, .menu a:focus {
+    color: var(--clr-primary);
+}
+
+.menu {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+}
+
+ .intro {
+    background-color: #333;
+    background-image: url(c33ea368250505.5b569c97759ff.jpg);
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+    margin: 0;
+    text-align: center;
+    padding: 5rem;
+    color: #111;
+}
+span {
+    color: var(--clr-primary);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.about__content {
+    background-color: var(--clr-accent);
+    color: #ffffaa;
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+}
+
+.about__content p {
+    order: -1;
+    padding: 1.5em 1em;
+    font-size: 1.8rem;
+    background-image: url(hlmix8kfnhfkpzm05obgftryemdolx8buf6rgiwfkbitr5be15v1s7gqgfsp7abf-.jpg);
+    background-blend-mode: multiply;
+}
+
+.about__content h4 {
+    font-size: 1.2rem;
+    padding: 2em 1em;
+}
+
+.order {
+    text-align: center;
+    padding: 1rem;
+}
+
+.order p {
+    font-size: 1.5rem;
+}
+
+.btn-group {
+    margin-top: 2rem;
+    font-family: "Pangolin";
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin: 3em 2.8em 0;
+}
+
+.btn + .btn{
+    margin-top: 2em;
+}
+
+.btn {
+    background-color: var(--clr-primary);
+    padding: 1.4em;
+    border-radius: .2em;
+    transition: .3s ease;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.order a:hover, a:focus {
+    color: #ffffaa;
+    transform: translateY(-10%);
+}
+
+.brushes {
+    background-image: url(download.jpg);
+    background-size: cover;
+}
+
+.paints {
+    background-image: url(Wiegardt2019Poppies-watercolor-22x30.jpg);
+    background-size: cover;
+}
+
+.accessories {
+    background-image: url(brushes2.jpg);
+    background-size: cover;
+}
+
+.store {
+    padding: 1em 2.5em;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+}
+
+.product__img {
+    width: 15rem;
+    height: 10rem;
+    box-shadow: .1rem .1rem .1rem .1rem;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.section-title:last-of-type {
+    margin-bottom: 1em;
+    padding-bottom: 0;
+}
+
+.btn-store {
+   padding: .8em 2em;
+   font-family: "Pangolin";
+   border-radius: .2em;
+   transition: .3s ease;
+}
+
+.btn-store:hover, .btn-store:focus {
+    color: #ffffaa;
+    transform: translateY(-10%);
+}
+
+.description {
+    margin-bottom: 2.3rem;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+footer {
+    background-color: var(--clr-primary);
+    padding: 1.5em 1em;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: #111;
+    text-transform: initial;
+}
+
+footer a:hover, footer a:focus {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer-nav  {
+    max-width: 10rem;
+    padding-right: 3em;
+    text-align: center;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+footer li + li {
+    line-height: 2em;
+}
+
+@media only screen and (min-width: 700px) {
+    .about__content {
+        flex-direction: row;
+    }
+
+    .about {
+        padding: 1em 3em;
+    }
+
+    .btn-group {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .btn-primary {
+       margin: 0;
+       padding: 1.3em;
+    }
+
+    .btn + .btn{
+        margin-top: 0;
+        margin-left: 1em;
+    }
+
+    h2 {
+        padding-bottom: 1.5em;
+        font-size: 1,6em;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+        font-size: 1.3em;
+    }
+
+    .menu {
+        max-width: 60rem;
+        justify-content: center;
+    }
+
+  li a {
+       margin: 1em;
+    }
+
+    .about__content h4 {
+        font-size: 1.4rem;
+        padding: 2em 1em;
+        line-height: 2.5em;
+}
+
+.product {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 30%;
+    flex-wrap: wrap;
+}
+
+.product__img {
+    width: 50rem;
+    height: 10rem;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    font-size: 1.1em;
+    justify-content: space-around;
+}
+
+}
+
+
+
+
