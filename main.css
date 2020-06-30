@@ -226,16 +226,17 @@ footer ul {
 }
 
 .footer-nav  {
-    padding-right: 3em;
+    padding: 1em;
     text-align: center;
 }
 
 .footer-social {
     text-align: center;
+    padding: 1em;
 }
 
 footer li + li {
-    line-height: 2em;
+    line-height: 3em;
 }
 
 @media only screen and (min-width: 700px) {
@@ -309,6 +310,19 @@ footer li + li {
 footer {
     font-size: 1.1em;
     justify-content: space-around;
+}
+       
+.footer-nav  {
+    text-align: center;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+footer li + li {
+    line-height: 2em;
+
 }
 
 }
